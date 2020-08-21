@@ -12,8 +12,16 @@ aside {
     align-items: center;
 }
 
-img {
+aside > img {
     width: 100px;
     border-radius: 50%;
     border: 3px solid #00838F;
+}
+
+aside section h3 {
+    background-color: #002429;
+    color: #00ACC1;
+    text-align: center;
+
+    text-transform: uppercase;
 }
