@@ -1,27 +1,81 @@
-* {
-    box-sizing: border-box;
-    margin: 0!important;
-    padding: 0!important;
+/* INITIALISATION */
+
+:root {
+    --main-color: #00ACC1;
 }
 
-aside {
-    background-color: #00ACC1;
+*, body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background-color: #ECECEC;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
     display: flex;
     flex-direction: column;
+}
+
+/* ASIDE */
+
+aside {
+    background-color: var(--main-color);
+
     align-items: center;
+
+    width: 30%;
 }
 
 aside > img {
-    width: 100px;
+    width: 200px;
     border-radius: 50%;
     border: 3px solid #00838F;
 }
 
+aside section {
+    width: 100%;
+}
+
 aside section h3 {
+
+    width: 100%;
+
     background-color: #002429;
     color: #00ACC1;
     text-align: center;
 
     text-transform: uppercase;
+}
+
+/* CONTENU */
+
+main {
+    width: 70%;
+    background-color: #fff;
+}
+
+main header h1 {
+    font-weight: normal;
+}
+
+.distinct {
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+u {
+    text-decoration-color: var(--main-color);
 }
