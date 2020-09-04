@@ -4,9 +4,12 @@
     --main-color: #00ACC1;
 }
 
-*, body, html {
+body, html {
     margin: 0;
     padding: 0;
+}
+
+* {
     box-sizing: border-box;
 }
 
