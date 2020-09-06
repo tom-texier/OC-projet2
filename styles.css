@@ -2,9 +2,10 @@
 
 :root {
     --main-color: #00ACC1;
+    --bg-color: #002429;
 }
 
-body, html {
+body, html, *:not(ul) {
     margin: 0;
     padding: 0;
 }
@@ -56,14 +57,14 @@ aside section h3 {
 
     width: 100%;
 
-    background-color: #002429;
-    color: #00ACC1;
+    background-color: var(--bg-color);
+    color: var(--main-color);
     text-align: center;
 
     text-transform: uppercase;
 }
 
-/* CONTENU */
+/* CONTENU PRINCIPAL*/
 
 main {
     width: 70%;
@@ -74,11 +75,19 @@ main header h1 {
     font-weight: normal;
 }
 
+main header h4 {
+    color: var(--bg-color);
+}
+
+main header h4 u {
+    text-decoration-color: var(--main-color);
+}
+
+main .section-title {
+    border-bottom: 2px solid var(--main-color);
+}
+
 .distinct {
     font-weight: 500;
     color: var(--main-color);
-}
-
-u {
-    text-decoration-color: var(--main-color);
 }
