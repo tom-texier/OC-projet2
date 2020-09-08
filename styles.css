@@ -5,17 +5,18 @@
     --bg-color: #002429;
 }
 
-body, html, *:not(ul) {
+*:not(ul), :before, :after {
     margin: 0;
     padding: 0;
 }
 
-* {
+*, :before, :after {
     box-sizing: border-box;
 }
 
 body {
     background-color: #ECECEC;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -41,21 +42,28 @@ aside {
     align-items: center;
 
     width: 30%;
+    padding: 20px 0;
 }
 
 aside > img {
-    width: 200px;
+    width: 180px;
+    margin: 30px auto;
+
     border-radius: 50%;
-    border: 3px solid #00838F;
+    border: 4px solid #00838F;
 }
 
 aside section {
     width: 100%;
+
+    color: var(--bg-color);
 }
 
 aside section h3 {
 
     width: 100%;
+    padding: 7px 0;
+    font-size: 22px;
 
     background-color: var(--bg-color);
     color: var(--main-color);
@@ -64,7 +72,52 @@ aside section h3 {
     text-transform: uppercase;
 }
 
-/* CONTENU PRINCIPAL*/
+/* SECTION CONTACT */
+
+aside section#contact address {    
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+
+    padding: 15px 35px;
+}
+
+aside section#contact address div {
+    margin: 10px 0;
+}
+
+aside section#contact address div a {
+    text-decoration: none;
+    color: var(--bg-color);
+}
+
+aside section#contact address div :hover {
+    text-decoration: underline;
+}
+
+/* SECTION ABOUT */
+
+aside section#about p {
+    margin: 35px;
+
+    text-align: justify;
+
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+/* SECTION HOBBIES */
+
+aside section#hobbies > div {
+    margin: 35px;
+
+    font-size: 40px;
+
+    justify-content: space-around;
+}
+
+/* MAIN CONTENT */
 
 main {
     width: 70%;
