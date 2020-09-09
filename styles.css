@@ -175,3 +175,47 @@ main header h4 u {
 
 /* FORMATION  & EXPERIENCE */
 
+#formation .section-content, #experience .section-content {
+    color: var(--font-color);
+    margin-bottom: 50px;
+}
+
+#formation .section-content article, #experience .section-content article {
+    margin-top: 30px;
+}
+
+#formation .section-content article::before, #experience .section-content article::before {
+    content: "\2022";
+    color: var(--main-color);
+    width: 1em;
+    font-size: 35px;
+    margin-top: -10px;
+}
+
+#formation .section-content ul, #experience .section-content ul {
+    list-style-type: none;
+}
+
+#formation .section-content article div:nth-of-type(1), #experience .section-content article div:nth-of-type(1) {
+    width: 40%;
+}
+
+#formation .section-content article div:nth-of-type(2), #experience .section-content article div:nth-of-type(2) {
+    width: 50%;
+}
+
+#formation .section-content h4, #experience .section-content h4 {
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+#formation .section-content h5, #experience .section-content h5 {
+    margin: 10px 0;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+#formation .section-content p, #experience .section-content p {
+    margin-bottom: 10px;
+}
