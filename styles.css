@@ -35,7 +35,7 @@ body {
     flex-direction: column;
 }
 
-/* HEADER */
+/* HEADER -> IMG Profil + Nom + Titre */
 
 header section:nth-of-type(1) {
     width: 30%;
@@ -93,14 +93,6 @@ aside {
 
     width: 30%;
     padding: 20px 0;
-}
-
-aside img {
-    width: 180px;
-    margin: 30px auto;
-
-    border-radius: 50%;
-    border: 4px solid #00838F;
 }
 
 aside section {
@@ -161,10 +153,11 @@ aside section#about p {
 
 aside section#hobbies > div {
     margin: 35px 35px 20px 35px;
-
-    font-size: 40px;
-
     justify-content: space-around;
+}
+
+aside section#hobbies > div img{
+    width: 50px;
 }
 
 /* MAIN CONTENT */
@@ -182,9 +175,12 @@ main .section-title {
     border-bottom: 2px solid var(--main-color);
 
     color: var(--main-color);
-    font-size: 30px;
 
     align-items: center;
+}
+
+main .section-title img{
+    width: 45px;
 }
 
 main .section-title h3 {
@@ -197,16 +193,16 @@ main .section-title h3 {
 
 /* FORMATION  & EXPERIENCE */
 
-#formation .section-content, #experience .section-content {
+main .section-content {
     color: var(--font-color);
     margin-bottom: 50px;
 }
 
-#formation .section-content article, #experience .section-content article {
+main .section-content article {
     margin-top: 30px;
 }
 
-#formation .section-content article::before, #experience .section-content article::before {
+main .section-content article::before {
     content: "\2022";
     color: var(--main-color);
     width: 40px;
@@ -214,31 +210,31 @@ main .section-title h3 {
     margin-top: -12px;
 }
 
-#formation .section-content ul, #experience .section-content ul {
+main .section-content ul {
     list-style-type: none;
 }
 
-#formation .section-content article div:nth-of-type(1), #experience .section-content article div:nth-of-type(1) {
+main .section-content article div:nth-of-type(1) {
     width: 40%;
 }
 
-#formation .section-content article div:nth-of-type(2), #experience .section-content article div:nth-of-type(2) {
+main .section-content article div:nth-of-type(2) {
     width: 50%;
 }
 
-#formation .section-content h4, #experience .section-content h4 {
+main .section-content h4 {
     text-transform: uppercase;
     margin: 10px 0;
     font-size: 20px;
 }
 
-#formation .section-content h5, #experience .section-content h5 {
+main .section-content h5 {
     margin: 10px 0;
     font-size: 17px;
     font-weight: normal;
 }
 
-#formation .section-content p, #experience .section-content p {
+main .section-content p {
     margin-bottom: 10px;
     font-size: 17px;
 }
@@ -275,11 +271,17 @@ main .section-title h3 {
     text-decoration: underline;
 }
 
+/* RESPONSIVE */
+
+/* Breakpoint laptop */
+
 @media screen and (min-width: 961px) and (max-width: 1230px){
     .container {
         width: 90%;
     }
 }
+
+/* Breakpoint tablet */
 
 @media screen and (max-width: 960px){
     .container {
@@ -351,6 +353,37 @@ main .section-title h3 {
 
 }
 
-@media screen and (max-width: 390px){
-    
+/* Breakpoint mobile */
+
+@media screen and (max-width: 630px){
+
+    main {
+        padding: 30px 10px 0 10px;
+    }
+
+    main .section-content article.row {
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    main .section-content article.row div {
+        width: 100%!important;
+    }
+
+    main .section-content article::before {
+        content: "";
+    }
+
+}
+
+@media screen and (max-width: 490px){
+
+    main section#recommandation div:last-child.row {
+        flex-direction: column;
+    }
+
+    main section#recommandation div:last-child.row article {
+        width: 100%;
+    }
+
 }
