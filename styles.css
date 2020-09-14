@@ -277,7 +277,7 @@ main .section-content p {
 
 /* Breakpoint */
 
-@media screen and (min-width: 961px) and (max-width: 1230px){
+@media (min-width: 961px) and (max-width: 1230px){
     .container {
         width: 90%;
     }
@@ -285,7 +285,7 @@ main .section-content p {
 
 /* Breakpoint */
 
-@media screen and (max-width: 960px){
+@media (max-width: 960px){
     .container {
         width: 100%;
     }
@@ -293,7 +293,7 @@ main .section-content p {
 
 /* Breakpoint */
 
-@media screen and (max-width: 910px){
+@media (max-width: 910px){
     .container header {
         flex-direction: column;
     }
@@ -359,7 +359,7 @@ main .section-content p {
 
 /* Breakpoint */
 
-@media screen and (max-width: 630px){
+@media (max-width: 630px){
 
     main {
         padding: 30px 10px 0 10px;
@@ -382,7 +382,7 @@ main .section-content p {
 
 /* Breakpoint */
 
-@media screen and (max-width: 490px){
+@media (max-width: 490px){
 
     main section#recommandation div:last-child.row {
         flex-direction: column;
