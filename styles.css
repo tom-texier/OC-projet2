@@ -315,7 +315,7 @@ main .section-content p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 100px 0 10px 30px;
+        padding: 100px 30px 10px 30px;
 
         background-color: var(--main-color);
     }
@@ -384,6 +384,10 @@ main .section-content p {
 
     main section#recommandation div:last-child.row article {
         width: 100%;
+    }
+
+    header section:nth-of-type(2) { 
+        padding: 100px 0 10px 0;
     }
 
 }
