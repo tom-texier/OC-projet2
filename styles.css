@@ -37,7 +37,7 @@ body {
 
 /* HEADER -> IMG Profil + Nom + Titre */
 
-header section:nth-of-type(1) {
+header div {
     width: 30%;
 
     display: flex;
@@ -54,7 +54,7 @@ header img {
     border: 4px solid #00838F;
 }
 
-header section:nth-of-type(2) {
+header section {
     width: 70%;
 
     background-color: #FFFFFF;
@@ -294,24 +294,24 @@ main .section-content p {
         flex-direction: column;
     }
 
-    .container header section{
+    .container header section, .container header div{
         width: 100%;
         margin: auto;
     }
 
-    header section:nth-of-type(1){ 
+    header div{ 
         height: 100px;
         background-color: #FFFFFF;
     }
 
-    header section:nth-of-type(1) img{ 
+    header img{ 
         position: absolute;
         z-index: 2;
 
         margin: 0;
     }
 
-    header section:nth-of-type(2) { 
+    header section { 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -386,7 +386,7 @@ main .section-content p {
         width: 100%;
     }
 
-    header section:nth-of-type(2) { 
+    header section { 
         padding: 100px 0 10px 0;
     }
 
