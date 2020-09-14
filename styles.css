@@ -1,11 +1,5 @@
 /* INITIALISATION */
 
-:root {
-    --main-color: #009cb0;
-    --dark-color: #002429;
-    --font-color: #222735;
-}
-
 *:not(ul), :before, :after {
     margin: 0;
     padding: 0;
@@ -43,7 +37,7 @@ header div {
     display: flex;
     justify-content: center;
 
-    background-color: var(--main-color);
+    background-color: #009cb0;
 }
 
 header img {
@@ -70,11 +64,11 @@ header h1 {
 
 .distinct {
     font-weight: normal;
-    color: var(--main-color);
+    color: #009cb0;
 }
 
 header h4 {
-    color: var(--font-color);
+    color: #222735;
     font-size: 20px;
     line-height: 30px;
 }
@@ -82,13 +76,13 @@ header h4 {
 header h4 u {
     text-decoration: none;
     padding-bottom: 1px;
-    border-bottom: 2px solid var(--main-color);
+    border-bottom: 2px solid #009cb0;
 }
 
 /* ASIDE */
 
 aside {
-    background-color: var(--main-color);
+    background-color: #009cb0;
 
     align-items: center;
     justify-content: space-between;
@@ -100,7 +94,7 @@ aside {
 aside section {
     width: 100%;
 
-    color: var(--font-color);
+    color: #222735;
 }
 
 aside section h3 {
@@ -109,8 +103,8 @@ aside section h3 {
     padding: 7px 0;
     font-size: 24px;
 
-    background-color: var(--dark-color);
-    color: var(--main-color);
+    background-color: #002429;
+    color: #009cb0;
     text-align: center;
 
     text-transform: uppercase;
@@ -132,7 +126,7 @@ aside section#contact address div {
 
 aside section#contact address div a {
     text-decoration: none;
-    color: var(--font-color);
+    color: #222735;
 }
 
 aside section#contact address div :hover {
@@ -174,9 +168,9 @@ main {
 
 main .section-title {
     padding-bottom: 5px;
-    border-bottom: 2px solid var(--main-color);
+    border-bottom: 2px solid #009cb0;
 
-    color: var(--main-color);
+    color: #009cb0;
 
     align-items: center;
 }
@@ -196,7 +190,7 @@ main .section-title h3 {
 /* FORMATION  & EXPERIENCE */
 
 main .section-content {
-    color: var(--font-color);
+    color: #222735;
     margin-bottom: 50px;
 }
 
@@ -206,7 +200,7 @@ main .section-content article {
 
 main .section-content article::before {
     content: "\2022";
-    color: var(--main-color);
+    color: #009cb0;
     width: 40px;
     font-size: 36px;
     margin-top: -12px;
@@ -252,7 +246,7 @@ main .section-content p {
     margin-bottom: 60px;
     line-height: 30px;
 
-    color: var(--font-color);
+    color: #222735;
 }
 
 #recommandation article h5{
@@ -265,7 +259,7 @@ main .section-content p {
 }
 
 #recommandation article a {
-    color: var(--font-color);
+    color: #222735;
     text-decoration: none;
 }
 
@@ -321,7 +315,7 @@ main .section-content p {
         align-items: center;
         padding: 100px 30px 10px 30px;
 
-        background-color: var(--main-color);
+        background-color: #009cb0;
     }
 
     .distinct {
