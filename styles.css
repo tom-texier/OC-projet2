@@ -1,7 +1,7 @@
 /* INITIALISATION */
 
 :root {
-    --main-color: #00C4DC;
+    --main-color: #009cb0;
     --dark-color: #002429;
     --font-color: #222735;
 }
@@ -22,7 +22,7 @@ body {
 
 .container {
     width: 70%;
-    margin: 0 auto 0 auto;
+    margin: auto;
 }
 
 .row {
@@ -33,6 +33,54 @@ body {
 .column {
     display: flex;
     flex-direction: column;
+}
+
+/* HEADER */
+
+header section:nth-of-type(1) {
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--main-color);
+}
+
+header img {
+    width: 180px;
+    margin: 30px auto;
+
+    border-radius: 50%;
+    border: 4px solid #00838F;
+}
+
+header section:nth-of-type(2) {
+    width: 70%;
+
+    background-color: #FFFFFF;
+
+    padding: 60px 0 0 30px;
+}
+
+header h1 {
+    font-weight: 300;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.distinct {
+    font-weight: normal;
+    color: var(--main-color);
+}
+
+header h4 {
+    color: var(--font-color);
+    font-size: 20px;
+    line-height: 30px;
+}
+
+header h4 u {
+    text-decoration-color: var(--main-color);
 }
 
 /* ASIDE */
@@ -65,7 +113,7 @@ aside section h3 {
 
     width: 100%;
     padding: 7px 0;
-    font-size: 1.5em;
+    font-size: 24px;
 
     background-color: var(--dark-color);
     color: var(--main-color);
@@ -77,7 +125,7 @@ aside section h3 {
 /* SECTION CONTACT */
 
 aside section#contact address {    
-    font-size: .8em;
+    font-size: 15px;
     font-style: normal;
     font-weight: 600;
 
@@ -104,9 +152,9 @@ aside section#about p {
 
     text-align: justify;
 
-    font-size: .8em;
-    letter-spacing: 2px;
-    line-height: 25px;
+    font-size: 14px;
+    letter-spacing: 1.3px;
+    line-height: 20px;
 }
 
 /* SECTION HOBBIES */
@@ -114,36 +162,9 @@ aside section#about p {
 aside section#hobbies > div {
     margin: 35px 35px 20px 35px;
 
-    font-size: 3em;
+    font-size: 40px;
 
     justify-content: space-around;
-}
-
-/* HEADER */
-
-main header {
-    margin: 90px 0;
-}
-
-main header h1 {
-    font-weight: 300;
-    font-size: 4em;
-    text-transform: uppercase;
-}
-
-.distinct {
-    font-weight: normal;
-    color: var(--main-color);
-}
-
-main header h4 {
-    color: var(--font-color);
-    font-size: 1.3em;
-    line-height: 30px;
-}
-
-main header h4 u {
-    text-decoration-color: var(--main-color);
 }
 
 /* MAIN CONTENT */
@@ -161,7 +182,7 @@ main .section-title {
     border-bottom: 2px solid var(--main-color);
 
     color: var(--main-color);
-    font-size: 2em;
+    font-size: 30px;
 
     align-items: center;
 }
@@ -169,7 +190,7 @@ main .section-title {
 main .section-title h3 {
     color: #000000;
     text-transform: uppercase;
-    font-size: .8em;
+    font-size: 27px;
 
     margin-left: 30px;
 }
@@ -189,7 +210,7 @@ main .section-title h3 {
     content: "\2022";
     color: var(--main-color);
     width: 40px;
-    font-size: 2.4em;
+    font-size: 36px;
     margin-top: -12px;
 }
 
@@ -208,17 +229,18 @@ main .section-title h3 {
 #formation .section-content h4, #experience .section-content h4 {
     text-transform: uppercase;
     margin: 10px 0;
-    font-size: 1.2em;
+    font-size: 20px;
 }
 
 #formation .section-content h5, #experience .section-content h5 {
     margin: 10px 0;
-    font-size: 1em;
+    font-size: 17px;
     font-weight: normal;
 }
 
 #formation .section-content p, #experience .section-content p {
     margin-bottom: 10px;
+    font-size: 17px;
 }
 
 /* RECOMMANDATION */
@@ -237,7 +259,11 @@ main .section-title h3 {
 
 #recommandation article h5{
     text-transform: uppercase;
-    font-size: 1.1em;
+    font-size: 18px;
+}
+
+#recommandation article address {
+    font-style: normal;
 }
 
 #recommandation article a {
@@ -247,4 +273,84 @@ main .section-title h3 {
 
 #recommandation article a:hover {
     text-decoration: underline;
+}
+
+@media screen and (min-width: 961px) and (max-width: 1230px){
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 910px){
+    .container header {
+        flex-direction: column;
+    }
+
+    .container header section{
+        width: 100%;
+        margin: auto;
+    }
+
+    header section:nth-of-type(1){ 
+        height: 100px;
+        background-color: #FFFFFF;
+    }
+
+    header section:nth-of-type(1) img{ 
+        position: absolute;
+        z-index: 2;
+
+        margin: 0;
+    }
+
+    header section:nth-of-type(2) { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0 10px 30px;
+
+        background-color: var(--main-color);
+    }
+
+    .distinct {
+        color: #FFFFFF;
+    }
+    
+    header h4 u {
+        text-decoration-color: #FFFFFF;
+    }
+
+    .container > div.row {
+        flex-direction: column;
+    }
+
+    .container aside {
+        width: 100%;
+    }
+
+    aside section#contact address{
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+
+    aside section#contact address div{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .container main {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 390px){
+    
 }
