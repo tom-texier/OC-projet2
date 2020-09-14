@@ -80,7 +80,9 @@ header h4 {
 }
 
 header h4 u {
-    text-decoration-color: var(--main-color);
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 2px solid var(--main-color);
 }
 
 /* ASIDE */
@@ -325,7 +327,7 @@ main .section-content p {
     }
     
     header h4 u {
-        text-decoration-color: #FFFFFF;
+        border-bottom: 2px solid #FFFFFF;
     }
 
     .container > div.row {
@@ -337,7 +339,7 @@ main .section-content p {
     }
 
     aside section#contact address{
-        justify-content: space-around;
+        justify-content: space-between;
         flex-flow: row wrap;
     }
 
