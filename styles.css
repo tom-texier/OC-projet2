@@ -158,8 +158,26 @@ aside section#hobbies > div {
     justify-content: space-around;
 }
 
-aside section#hobbies > div img{
+aside section#hobbies > div > div {
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 8px;
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+aside section#hobbies > div > div:first-of-type {
+    padding: 10px 5px;
+}
+
+aside section#hobbies > div > div:first-of-type img{
     width: 50px;
+}
+
+aside section#hobbies > div > div img{
+    width: 40px;
 }
 
 /* MAIN CONTENT */
@@ -200,11 +218,27 @@ main .section-content {
     margin-bottom: 50px;
 }
 
-main .section-content article {
+main .section-content div.bloc {
     margin-top: 30px;
 }
 
-main .section-content article::before {
+main .section-content div.bloc img {
+    width: 12px;
+    display: flex;
+    align-self: flex-start;
+}
+
+main .section-content div.bloc:first-of-type::before {
+    content: "";
+}
+
+main .section-content div.bloc i {
+    color: var(--main-color);
+    margin-left: -40px;
+    margin-right: 25px;
+}
+
+main .section-content div.bloc::before {
     content: "\2022";
     color: var(--main-color);
     width: 40px;
@@ -216,11 +250,11 @@ main .section-content ul {
     list-style-type: none;
 }
 
-main .section-content article div:nth-of-type(1) {
+main .section-content div.bloc div:nth-of-type(1) {
     width: 40%;
 }
 
-main .section-content article div:nth-of-type(2) {
+main .section-content div.bloc div:nth-of-type(2) {
     width: 50%;
 }
 
@@ -247,7 +281,7 @@ main .section-content p {
     margin-bottom: 30px;
 }
 
-#recommandation article {
+#recommandation div.bloc {
     width: 50%;
     margin-bottom: 60px;
     line-height: 30px;
@@ -255,21 +289,21 @@ main .section-content p {
     color: var(--font-color);
 }
 
-#recommandation article h5{
+#recommandation div.bloc h5{
     text-transform: uppercase;
     font-size: 18px;
 }
 
-#recommandation article address {
+#recommandation div.bloc address {
     font-style: normal;
 }
 
-#recommandation article a {
+#recommandation div.bloc a {
     color: var(--font-color);
     text-decoration: none;
 }
 
-#recommandation article a:hover {
+#recommandation div.bloc a:hover {
     text-decoration: underline;
 }
 
@@ -365,16 +399,16 @@ main .section-content p {
         padding: 30px 10px 0 10px;
     }
 
-    main .section-content article.row {
+    main .section-content div.bloc.row {
         flex-direction: column;
         margin-top: 70px;
     }
 
-    main .section-content article.row div {
+    main .section-content div.bloc.row div {
         width: 100%!important;
     }
 
-    main .section-content article::before {
+    main .section-content div.bloc::before {
         content: "";
     }
 
@@ -388,12 +422,64 @@ main .section-content p {
         flex-direction: column;
     }
 
-    main section#recommandation div:last-child.row article {
+    main section#recommandation div:last-child.row div.bloc {
         width: 100%;
     }
 
     header section { 
         padding: 100px 0 10px 0;
+    }
+
+}
+
+/* Breakpoint */
+
+@media (max-width: 360px){
+
+    main section .section-title img {
+        width: 30px;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 489px){
+
+    main section .section-title h3 {
+        width: 25px;
+    }
+
+}
+
+
+@media (min-width: 340px) and (max-width: 359px){
+
+    main section .section-title h3 {
+        width: 20px;
+    }
+
+}
+
+@media (min-width: 321px) and (max-width: 339px){
+
+    main section .section-title h3 {
+        width: 20px;
+        margin-left: 20px;
+    }
+
+    header section h1 {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 320px){
+
+    header section h1 {
+        text-align: center;
+    }
+
+    main section .section-title h3 {
+        margin-left: 5px;
     }
 
 }
